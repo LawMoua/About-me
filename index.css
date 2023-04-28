@@ -1,0 +1,13 @@
+.black-section {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+section {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}

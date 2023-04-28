@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Law Moua</title>
+  </head>
+  <body>
+    <section class="black-section">
+      <h1 style="text-decoration: underline">Law Moua</h1>
+      <h2 style="text-decoration: bold">About my somewhat fun life :D</h2>
+      <img
+        src="./assets/babylaw.JPG"
+        alt="Baby picture of me"
+        width="400"
+        height="300"
+      />
+    </section>
+    <div class="firstDiv">
+      <ul>
+        <p>
+          My name is Law Moua and I am the youngest intern of Cycle 12 at
+          i.c.stars. I am 18 and the picture above is 7 year old me when I used
+          to live in Minnesota.
+        </p>
+      </ul>
+      <button id="prom">Surprise!</button>
+      <button id="dog">Fun fact!</button>
+      <p class="paragraph"></p>
+      <p class="paragraph2"></p>
+      <img class="img" width="20%" />
+      <ul>
+        <script>
+          const prom = document.getElementById("prom");
+          const paragraph = document.querySelector(".paragraph");
+          console.log(paragraph.innerText);
+
+          prom.addEventListener("click", function () {
+            const imageSource = "./assets/promlaw.jpg";
+
+            if (paragraph.innerText) {
+              console.log("The paragraph already has text");
+            } else {
+              console.log(false);
+              paragraph.innerText = `Hello again! This is a prom picture of me and the car behind me is Corvette from one of my cousins`;
+            }
+            const img = document.querySelector(".img");
+            img.src = imageSource;
+          });
+        </script>
+        <script>
+          const dog = document.getElementById("dog");
+          const paragraph2 = document.querySelector(".paragraph2");
+          console.log(paragraph2.innerText);
+
+          dog.addEventListener("click", function () {
+            const imageSource2 = "./assets/dog.JPG";
+
+            if (paragraph2.innerText) {
+              console.log("The paragraph already has text");
+            } else {
+              console.log(false);
+              paragraph2.innerText = `Hello once again! This a picture of my dog with a rat filter on and his name is Confucious. I have had him for about a year and 2 months.`;
+            }
+            const img = document.querySelector(".img");
+            img.src = imageSource2;
+          });
+        </script>
+      </ul>
+    </div>
+  </body>
+</html>
